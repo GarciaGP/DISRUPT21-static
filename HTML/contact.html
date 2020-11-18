@@ -2,7 +2,7 @@
 <html lang="pt-br" dir="ltr">
 
 <head>
-    <title>Back To The Future - About</title>
+    <title>Back To The Future - Cast</title>
     <meta charset="utf-8">
     <meta name="viewport">
     <meta name="viewport" content="width-device-width, initial-scale=1">
@@ -23,11 +23,10 @@
         crossorigin="anonymous" />
     <!-- ESTILO -->
     <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>
-
 
     <!-- TOPO -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -45,8 +44,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Home</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="" target="">About</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" target="">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="cast.html" target="">Cast</a>
@@ -61,7 +60,7 @@
                     <a class="nav-link" href="#" target="blank">Pitch</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html" target="">Contact</a></li>
+                    <a class="nav-link active" href="" target="">Contact</a></li>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0 nav-search">
@@ -73,44 +72,34 @@
     </nav>
 
     <!-- CONTEUDO -->
-    <div class="container-fluid d-flex align-items-center about-bg">
-        <div class="row d-flex align-items-center film-content">
+    <div class="container-fluid d-flex justify-content-center contact-bg">
+        <div class="row d-flex justify-content-center align-items-center contact-content">
             <div class="col-12">
-                <div class="film-title">
-                    <h1>De Volta Para o Futuro</h1>
+                <div>
+                    <h2 class="text-center">CONTATO</h2>
                 </div>
-                <div class="film-title-orig">
-                    <h4>Back To The Future</h4>
-                </div>
-                <div class="film-date">
-                    <p>
-                        <strong>Lançamento: </strong>1985
-                    </p>
-                </div>
-                <div class="film-category">
-                    <p>
-                        <strong>Categoria: </strong>Ficção científica, Aventura
-                    </p>
-                </div>
-                <div class="film-sinopse">
-                    <p>
-                        Marty McFly, um adolescente de uma pequena cidade californiana, é transportado para a década de
-                        1950
-                        quando a experiência do excêntrico cientista Doc Brown dá errado. Viajando no tempo em um carro
-                        modificado, Marty conhece versões jovens de seus pais e precisa fazer com que eles se apaixonem,
-                        ou
-                        então ele deixará de existir. Para complicar, Marty precisa voltar para casa a tempo de salvar o
-                        cientista.
-                    </p>
-                </div>
-                <div class="film-drection">
-                    <p><strong>Direção: </strong>Robert Zemeckis</p>
-                </div>
-                <div class="film-cast">
-                    <p>
-                        <strong>Elenco: </strong>Michael J. Fox, Christopher Lloyd, Lea Thompson, Crispin Glover, Thomas
-                        F. Wilson, Claudia Wells
-                    </p>
+                <div class="d-flex justify-content-center contact-form">
+                    <form name="form-send-message" id="formSendMessage" method="post" action="">
+                        <fieldset class="form-group">
+                            <input type="text" name="contactName" class="form-control" id="contactName"
+                                placeholder="Nome" aria-label="Nome" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input type="email" name="contactEmail" class="form-control" id="contactEmail"
+                                placeholder="E-mail" aria-label="E-mail" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input type="tel" name="contactTelephone" class="form-control" id="contactTelephone"
+                                aria-label="Telefone" placeholder="Telefone" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <textarea name="contactMessage" class="form-control " id="contactMessage" rows="4"
+                                placeholder="Mensagem" aria-label="Mensagem" required></textarea>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <button type="submit" name="send" class="btn btn-block" id="sendMessage">Enviar</button>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
@@ -133,7 +122,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
     </script>
-    <script src="../js/audio.js"></script>
 
 </body>
 

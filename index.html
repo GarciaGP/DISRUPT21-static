@@ -2,133 +2,118 @@
 <html lang="pt-br" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>AmbersFlix</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Back To The Future - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#f55d62">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <!-- ESTILO -->
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <div class="menu">
-                <div>
-                    <ul>
-                        <li><a href="./index.html" class="active">Início</a></li>
-                        <li><a href="./HTML/series.html" target="">Séries</a></li>
-                        <li><a href="./HTML/filmes.html" target="">Filmes</a></li>
-                        <li><a href="./HTML/categorias.html" target="">Categorias</a></li>
-                        <li><a href="./HTML/formulario.html" target="">Entre em contato</a></li>
-                    </ul>
-                </div>
-                <div class="search">
-                    <div>
-                        <label for="busca"><span class="fas fa-search"></span></label>
-                        <input class="main-search" type="search" id="busca" name="" value="" placeholder="Busca"
-                            maxlength="150" autofocus>
-                    </div>
-                </div>
-            </div>
-            <div class="header">
-                <div class="header-banner index">
 
-                    <img class="img-banner"
-                        src="./images/banners/painel-decorativo-banner-la-casa-de-papel-a-casa-2x12-mts-D_NQ_NP_984200-MLB28561311270_112018-F.jpg"
-                        alt="Banner La Casa de Papel">
-                </div>
-                <div class="header-info">
-                    <h1>Assista de onde estiver
-                    </h1>
-                    <p>Assine AmbersFlix e tenha acesso antecipado a lançamentos de séries e filmes.
-                        Obtenha o pacote AmbersPrime e tenha acesso a partir de mais de uma conta, entre outras
-                        funcionalidades exclusivas.
-                    </p>
-                    <div class="button-wrap">
-                        <button class="btn-primary">Faça o login</button>
-                        <p>ou</p>
-                        <button class="btn-primary">Cadastre-se</button>
-                    </div>
-                </div>
-            </div>
+    <!-- TOPO -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <figure class="logo">
+            <img src="../images/logo/bttf.png" title="Imagem logo Back To The Future"
+                alt="Imagem logo Back To The Future">
+        </figure>
+        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="Alternar de Navegação">
+            <span class="fas fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/about.html" target="">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/cast.html" target="">Cast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="blank">Diagram</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="blank">Machine Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="blank">Pitch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/contact.html" target="">Contact</a></li>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 nav-search">
+                <input class="search" type="search" id="busca" name="" value="" aria-label="busca" placeholder="Busca"
+                    maxlength="150" autofocus>
+                <span class="fas fa-search btn-search"></span>
+            </form>
         </div>
-    </header>
-    <div class="container">
+    </nav>
 
-        <h2 class="sub-title">Últimos trailers</h2>
-        <div class="trailers">
-            <div>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/oVzVdvGIC7U">
-                    </iframe>
-                </div>
-                <p>A trama acompanha a trajetória da família Shelby após a Primeira Guerra Mundial. Tommy é o líder de
-                    uma gangue – chamada Peaky Blinders – que controla a cidade de Birmingham, na Inglaterra.
-                    Autoritário e destemido, ele briga com gangues rivais, enfrenta as autoridades e não mede esforços
-                    para ter sucesso nos negócios.</p>
-            </div>
-            <div>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/GMKKq_bYd0E">
-                    </iframe>
-                </div>
-                <p>Em Resgate, Tyler Rake (Chris Hemsworth) um agente especial recebe a difícil missão de libertar um
-                    garoto indiano que é mantido refém na cidade de Dhaka. Apesar de estar preparado fisicamente, ele
-                    precisa lidar com crises de identidade e com seu emocional fragilizado por problemas do passado para
-                    que consiga designar sua tarefa da melhor maneira possível.</p>
-            </div>
-        </div>
+    <!-- ANIMACAO LOGO -->
+    <div class="container-fluid d-flex justify-content-center index-bg">
+        <figure class="animated-logo d-flex justify-content-center align-items-center">
+            <img src="../images/logo/bttf.png" title="Animação logo Back To The Future"
+                alt="Animação logo Back To The Future">
+        </figure>
+    </div>
 
-        <div>
-            <h2>Filmes em alta</h2>
-            <div class="highlights">
-                <div class="imagem-do-filme">
-                    <div class="round-div">
-                        <a href="./HTML/theImitationGame.html" target="_blank"><img
-                                src="./images./postersDestaqueFilmes/posterTheImitationGame.jpg"
-                                alt="Poster The Imitation Game"></a>
-                    </div>
-                </div>
-                <div class="imagem-do-filme">
-                    <div class="round-div">
-                        <a href="./HTML/deadpool.html" target="_blank"><img
-                                src="./images./postersDestaqueFilmes/posterDeadpool.jpg" alt="Poster Deadpool"></a>
-                    </div>
-                </div>
-                <div class="imagem-do-filme">
-                    <div class="round-div">
-                        <a href="./HTML/piratesCaribbean.html" target="_blank"><img
-                                src="./images./postersDestaqueFilmes/posterPiratesOfTheCaribbean.jpg"
-                                alt="Poster Pirates of the Caribbean"></a>
-                    </div>
-                </div>
-            </div>
+    <!-- AUDIO -->
+    <audio id="audioSrc" autoplay loop class="unmuted">
+        <source src="audio/back-to-the-future.ogg" type="audio/ogg">
+        <source src="audio/back-to-the-future.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de audio.
+    </audio>
 
-            <h2>Séries em alta</h2>
-            <div class="highlights">
-                <div class="imagem-da-serie">
-                    <a href="./HTML/vikings.html" target="_blank"><img src="./images./postersDestaqueSeries/posterVikings.jpg"
-                            alt="Poster Vikings"></a>
-                </div>
-                <div class="imagem-da-serie">
-                    <a href="./HTML/theBlacklist.html" target="_blank"><img
-                            src="./images./postersDestaqueSeries/posterTheBlacklist.jpg" alt="Poster The Blacklist"></a>
-                </div>
-                <div class="imagem-da-serie">
-                    <a href="./HTML/alteredCarbon.html" target="_blank"><img
-                            src="./images./postersDestaqueSeries/posterAlteredCarbon.jpg"
-                            alt="Poster Altered Carbon"></a>
-                </div>
-            </div>
+    <div class="fixed-bottom" id="btnEqualizer" type="button">
+        <div class="equalizer">
+            <div class="equalizer-bar"></div>
+            <div class="equalizer-bar"></div>
+            <div class="equalizer-bar"></div>
+            <div class="equalizer-bar"></div>
+            <div class="equalizer-bar"></div>
         </div>
     </div>
-    <footer>
-        <p>Atividade 01 - Versão Abril 2020 - Produzido por @Ambers</p>
+
+    <!-- RODAPE -->
+    <footer class="fixed-bottom footer">
+        <div>
+            <p>DISRUPT21 - Desenvolvido por <a href="">Ambers</a></p>
+        </div>
     </footer>
+
+    <!-- jQuery, Popper.js and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+    <script src="js/audio.js"></script>
 
 </body>
 
