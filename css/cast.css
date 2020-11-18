@@ -45,7 +45,7 @@
     border-radius: 10px;
 }
 
-.actor-img-anime:hover {
+.actor-img-anime figure:hover {
     position: relative;
     animation: turn 2s linear infinite;
     transform-style: preserve-3d;
