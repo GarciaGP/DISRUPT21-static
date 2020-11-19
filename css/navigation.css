@@ -108,7 +108,7 @@ footer p {
 
 
 /* DEVICES */
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .navbar figure {
     margin: 0;
   }
@@ -133,7 +133,7 @@ footer p {
 
 }
 
-@media (max-width: 567px) {
+@media (max-width: 575.98px) {
   footer p {
     font-size: 0.7em;
   }
