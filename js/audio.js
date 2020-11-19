@@ -1,11 +1,16 @@
-// AUDIO
+const controlePlay = document.getElementById('audioSrc');
+function enablePreload() { 
+    controlePlay.preload = "auto";
+    playEqualizer();
+}
+
+//AUDIO CONTROL
 const btnEqualizer = document.querySelector('#btnEqualizer');
 
 btnEqualizer.addEventListener('click', function (event) {
 
     event.preventDefault();
 
-    var controlePlay = document.getElementById('audioSrc');
     var audioClass = document.querySelectorAll('.unmuted');
 
     if (audioClass.length === 1) {
@@ -48,4 +53,4 @@ function pauseEqualizer() {
     clearInterval(anime);
 }
 
-playEqualizer();
+enablePreload();
