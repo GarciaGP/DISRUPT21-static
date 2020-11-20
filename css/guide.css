@@ -1,0 +1,100 @@
+.film-trailer {
+    display: flex;
+}
+
+.film-description {
+    display: flex;
+}
+
+.film-trailer>* {
+    width: 50%;
+}
+
+.film-header {
+    transition: 0.5s;
+}
+
+.film-info {
+    width: 60%;
+}
+
+.marty {
+    background-image: linear-gradient(to right, #000 17%, transparent 60%), linear-gradient(to top, #000 0%, transparent 58%), url(../images/characters/marty.jpg);
+}
+
+.doc {
+    background-image: linear-gradient(to right, #000 17%, transparent 60%), linear-gradient(to top, #000 0%, transparent 58%), url(../images/characters/doc.png);
+}
+
+.george {
+    background-image: linear-gradient(to right, #000 17%, transparent 60%), linear-gradient(to top, #000 0%, transparent 58%), url(../images/characters/george.PNG);
+}
+
+.lorraine {
+    background-image: linear-gradient(to right, #000 17%, transparent 60%), linear-gradient(to top, #000 0%, transparent 58%), url(../images/characters/lorraine.PNG);
+}
+
+.beef {
+    background-image: linear-gradient(to right, #000 17%, transparent 60%), linear-gradient(to top, #000 0%, transparent 58%), url(../images/characters/beef.PNG);
+}
+
+.default {
+    background-image: linear-gradient(to right, #000 17%, transparent 60%), linear-gradient(to top, #000 0%, transparent 58%), url(../images/characters/default.jpg);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.column-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.characters-wrapper {
+    justify-content: space-around;
+}
+
+.year-wrapper {
+    justify-content: center;
+}
+
+.year-wrapper .toggleWrapper {
+    margin: 30px 10px;
+}
+
+.toggleWrapper {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s;
+    padding: 10px 14px;
+    border-radius: 50%;
+    background-color: #ea4323;
+    box-shadow: 0 20px 20px 0 rgba(#ea4323, 0.3);
+    border-radius: 3px;
+    width: 100px;
+}
+
+input:checked+.toggleWrapper {
+    background-color: #f9d304;
+    color: #000;
+    box-shadow: 0 20px 20px 0 rgba(#f9d304, 0.3);
+}
+
+.events-description {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.description-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.description-container p {
+    margin: 20px 0;
+}

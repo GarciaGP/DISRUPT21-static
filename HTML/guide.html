@@ -8,6 +8,7 @@
     <title>AmbersFlix - Altered Carbon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/guide.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
     </header>
     <div class="film-container">
 
-        <div class="film-header pirates">
+        <div class="film-header default" id="bg-holder">
             <div class="film-description">
 
                 <div class="film-info">
@@ -46,14 +47,50 @@
                             Selecione um personagem abaixo para um resumo do seu papel no filme - e o período em que cada evento ocorre.
                         </p>
                     </div>
-                    <!-- <div class="film-cast">
-                        <p>
-                            Elenco: Johnny Depp, Javier Bardem, Brenton Thwaites
-                        </p>
-                    </div> -->
 
                     <div class="film-trailer">
+                        <div class="characters-wrapper column-container">
+                            <input type="checkbox" id="1" />
+                            <label for="1" class="toggleWrapper">
+                                Marty
+                            </label>
 
+                            <input type="checkbox" id="2" />
+                            <label for="2" class="toggleWrapper">
+                                Doc
+                            </label>
+
+                            <input type="checkbox" id="3" />
+                            <label for="3" class="toggleWrapper">
+                                George
+                            </label>
+
+                            <input type="checkbox" id="4" />
+                            <label for="4" class="toggleWrapper">
+                                Lorraine
+                            </label>
+
+                            <input type="checkbox" id="5" />
+                            <label for="5" class="toggleWrapper">
+                                Beef
+                            </label>
+                        </div>
+                        <div class="year-wrapper column-container">
+                            <input type="checkbox" id="year1985" />
+                            <label for="year1985" class="toggleWrapper">
+                                <div class="toggle">1985</div>
+                            </label>
+
+                            <input type="checkbox" id="year1955" />
+                            <label for="year1955" class="toggleWrapper">
+                                <div class="toggle">1955</div>
+                            </label>
+
+                            <input type="checkbox" id="year1985alt" />
+                            <label for="year1985alt" class="toggleWrapper">
+                                <div class="toggle">1985 Alt.</div>
+                            </label>
+                        </div>
                     </div>
 
                     <div class="button-container">
@@ -61,12 +98,21 @@
 
                     </div>
                 </div>
+
+                <div class="events-description">
+                    <div class="description-container">
+                        <!-- Parágrafos montados pelas descrições que o banco preencher -->
+                    </div>
+
+                </div>
             </div>
         </div>
         <footer>
             <p>Atividade 01 - Versão Abril 2020 - Produzido por @Ambers</p>
         </footer>
     </div>
+
+    <script src="../scripts/guide.js"></script>
 </body>
 
 </html>
