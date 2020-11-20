@@ -4,6 +4,7 @@
 
 .film-description {
     display: flex;
+    padding: 50px;
 }
 
 .film-trailer>* {

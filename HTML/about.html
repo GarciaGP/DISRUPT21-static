@@ -15,12 +15,9 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <!-- ESTILO -->
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/about.css">
@@ -32,27 +29,25 @@
     <!-- TOPO -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <figure class="logo">
-            <img src="../images/logo/bttf.png" title="Imagem logo Back To The Future"
-                alt="Imagem logo Back To The Future">
+            <img src="../images/logo/bttf.png" title="Imagem logo Back To The Future" alt="Imagem logo Back To The Future">
         </figure>
-        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#menu"
-            aria-controls="menu" aria-expanded="false" aria-label="Alternar de Navegação">
+        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Alternar de Navegação">
             <span class="fas fa-bars"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" id="home" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="" target="">About</a>
+                    <a class="nav-link" id="about" href="" target="">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="cast.html" target="">Cast</a>
+                    <a class="nav-link" id="cast" href="cast.html" target="">Cast</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" target="blank">Diagram</a>
+                    <a class="nav-link" id="diagram" href="#" target="blank">Diagram</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" target="blank">Machine Learning</a>
@@ -61,13 +56,24 @@
                     <a class="nav-link" href="#" target="blank">Pitch</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html" target="">Contact</a></li>
+                    <a class="nav-link" id="contact" href="contact.html" target="">Contact</a></li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="guide" href="./guide.html" target="">Guide</a></li>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0 nav-search">
-                <input class="search" type="search" id="busca" name="" value="" aria-label="busca" placeholder="Busca"
-                    maxlength="150" autofocus>
-                <span class="fas fa-search btn-search"></span>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langSelect" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Language
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" id="eng" href="#">English</a>
+                            <a class="dropdown-item" id="pt" href="#">Portuguese</a>
+                        </div>
+                    </li>
+                </ul>
             </form>
         </div>
     </nav>
@@ -84,32 +90,21 @@
                 </div>
                 <div class="film-date">
                     <p>
-                        <strong>Lançamento: </strong>1985
                     </p>
                 </div>
                 <div class="film-category">
                     <p>
-                        <strong>Categoria: </strong>Ficção científica, Aventura
                     </p>
                 </div>
                 <div class="film-sinopse">
                     <p>
-                        Marty McFly, um adolescente de uma pequena cidade californiana, é transportado para a década de
-                        1950
-                        quando a experiência do excêntrico cientista Doc Brown dá errado. Viajando no tempo em um carro
-                        modificado, Marty conhece versões jovens de seus pais e precisa fazer com que eles se apaixonem,
-                        ou
-                        então ele deixará de existir. Para complicar, Marty precisa voltar para casa a tempo de salvar o
-                        cientista.
                     </p>
                 </div>
-                <div class="film-drection">
-                    <p><strong>Direção: </strong>Robert Zemeckis</p>
+                <div class="film-direction">
+                    <p></p>
                 </div>
                 <div class="film-cast">
                     <p>
-                        <strong>Elenco: </strong>Michael J. Fox, Christopher Lloyd, Lea Thompson, Crispin Glover, Thomas
-                        F. Wilson, Claudia Wells
                     </p>
                 </div>
             </div>
@@ -119,21 +114,20 @@
     <!-- RODAPE -->
     <footer>
         <div>
-            <p>DISRUPT21 - Desenvolvido por <a href="">Ambers</a></p>
+            <p></p>
         </div>
     </footer>
 
     <!-- jQuery, Popper.js and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
     </script>
     <script src="../js/audio.js"></script>
+    <script src="../scripts/global.js"></script>
+    <script src="../scripts/about.js"></script>
 
 </body>
 
