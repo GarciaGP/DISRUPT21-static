@@ -1,0 +1,82 @@
+.container-fluid {
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.about-bg {
+    background-image: linear-gradient(to right, #000 5%, transparent 99%),
+        linear-gradient(to top, #000 1%, transparent 99%),
+        url(../images/background/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    opacity: 70%;
+}
+
+.film-content {
+    width: 40%;
+}
+
+.film-title {
+    padding-top: 25%;
+}
+
+.film-sinopse {
+    line-height: 26px;
+}
+
+.film-date,
+.film-category,
+.film-direction,
+.film-cast {
+    font-size: 14px;
+    color: #a9a9a9;
+}
+
+.film-cast {
+    padding-bottom: 25%;
+}
+
+/* DEVICES */
+@media (max-width: 991.98px) {
+    .container-fluid {
+        height: auto;
+    }
+
+    .row h1 {
+        font-size: 1em;
+    }
+
+    .row h4 {
+        font-size: 1em;
+    }
+
+    .film-content {
+        width: 60%;
+    }
+
+    .film-info {
+        width: 70%;
+
+    }
+
+    .film-title {
+        font-size: 2em;
+    }
+}
+
+@media (min-height: 654px) {
+    .container-fluid {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .film-content {
+        width: 100%;
+    }
+
+    .film-title {
+        font-size: 1.5em;
+    }
+}

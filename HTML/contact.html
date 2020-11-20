@@ -2,16 +2,16 @@
 <html lang="pt-br" dir="ltr">
 
 <head>
-    <title>Back To The Future - Home</title>
+    <title>Back To The Future - Cast</title>
     <meta charset="utf-8">
     <meta name="viewport">
     <meta name="viewport" content="width-device-width, initial-scale=1">
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#f55d62">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="../images/favicons/safari-pinned-tab.svg" color="#f55d62">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
     <!-- BOOTSTRAP -->
@@ -19,8 +19,8 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <!-- ESTILO -->
-    <link rel="stylesheet" href="./css/navigation.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
     <!-- TOPO -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <figure class="logo">
-            <img src="./images/logo/bttf.png" title="Imagem logo Back To The Future" alt="Imagem logo Back To The Future">
+            <img src="../images/logo/bttf.png" title="Imagem logo Back To The Future" alt="Imagem logo Back To The Future">
         </figure>
         <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Alternar de Navegação">
             <span class="fas fa-bars"></span>
@@ -36,14 +36,14 @@
 
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="html/about.html" target="">About</a>
+                    <a class="nav-link" href="about.html" target="">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="html/cast.html" target="">Cast</a>
+                    <a class="nav-link" href="cast.html" target="">Cast</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" target="blank">Diagram</a>
@@ -55,10 +55,10 @@
                     <a class="nav-link" href="#" target="blank">Pitch</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="html/contact.html" target="">Contact</a></li>
+                    <a class="nav-link active" href="" target="">Contact</a></li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="html/guide.html" target="">Guide</a></li>
+                    <a class="nav-link" href="./guide.html" target="">Guide</a></li>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0 nav-search">
@@ -68,31 +68,38 @@
         </div>
     </nav>
 
-    <!-- ANIMACAO LOGO -->
-    <div class="container-fluid d-flex justify-content-center index-bg">
-        <figure class="animated-logo d-flex justify-content-center align-items-center">
-            <img src="./images/logo/bttf.png" title="Animação logo Back To The Future" alt="Animação logo Back To The Future">
-        </figure>
-    </div>
-
-    <!-- AUDIO -->
-    <audio id="audioSrc" autoplay loop class="unmuted">
-        <source src="audio/back-to-the-future.mp3" type="audio/mpeg">
-        Seu navegador não suporta o elemento de audio.
-    </audio>
-
-    <div class="fixed-bottom" id="btnEqualizer" type="button">
-        <div class="equalizer">
-            <div class="equalizer-bar"></div>
-            <div class="equalizer-bar"></div>
-            <div class="equalizer-bar"></div>
-            <div class="equalizer-bar"></div>
-            <div class="equalizer-bar"></div>
+    <!-- CONTEUDO -->
+    <div class="container-fluid d-flex justify-content-center contact-bg">
+        <div class="row d-flex justify-content-center align-items-center contact-content">
+            <div class="col-12">
+                <div>
+                    <h2 class="text-center">CONTATO</h2>
+                </div>
+                <div class="d-flex justify-content-center contact-form">
+                    <form name="form-send-message" id="formSendMessage" method="post" action="">
+                        <fieldset class="form-group">
+                            <input type="text" name="contactName" class="form-control" id="contactName" placeholder="Nome" aria-label="Nome" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input type="email" name="contactEmail" class="form-control" id="contactEmail" placeholder="E-mail" aria-label="E-mail" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input type="tel" name="contactTelephone" class="form-control" id="contactTelephone" aria-label="Telefone" placeholder="Telefone" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <textarea name="contactMessage" class="form-control " id="contactMessage" rows="4" placeholder="Mensagem" aria-label="Mensagem" required></textarea>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <button type="submit" name="send" class="btn btn-block" id="sendMessage">Enviar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- RODAPE -->
-    <footer class="fixed-bottom footer">
+    <footer>
         <div>
             <p>DISRUPT21 - Desenvolvido por <a href="">Ambers</a></p>
         </div>
@@ -105,7 +112,6 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
     </script>
-    <script src="js/audio.js"></script>
 
 </body>
 
