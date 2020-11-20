@@ -1,0 +1,90 @@
+.container-fluid {
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.cast-bg {
+    background-image: linear-gradient(to right, #000 5%, transparent 99%),
+        linear-gradient(to top, #000 1%, transparent 99%),
+        url(../images/background/cast.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    opacity: 70%;
+}
+
+.cast-contents {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.actor-info {
+    width: 100%;
+}
+
+.actor-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+}
+
+.actor-img-anime {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actor-img-anime figure {
+    width: 40%;
+}
+
+.actor-img-anime img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.actor-img-anime figure:hover {
+    position: relative;
+    animation: turn 2s linear infinite;
+    transform-style: preserve-3d;
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+}
+
+@keyframes turn {
+    0% {
+        transform: rotateY(0);
+    }
+
+    25% {
+        transform: rotateY(-20deg);
+    }
+
+    50% {
+        transform: rotateY(0);
+    }
+
+    75% {
+        transform: rotateY(20deg);
+    }
+}
+
+
+/* DEVICES */
+@media (max-height: 540px) {
+    .container-fluid {
+        height: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container-fluid {
+        height: 100%;
+    }
+
+    .actor {
+        width: 90%;
+    }
+}
