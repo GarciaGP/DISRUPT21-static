@@ -1,0 +1,28 @@
+.container-fluid {
+  height: 100vh;
+}
+
+.diagram-bg {
+  background-image: linear-gradient(to right, #0000007b 1%, transparent 99%),
+    linear-gradient(to top, #000 1%, transparent 99%),
+    url(../images/background/diagram.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.diagram {
+  width: 60%;
+}
+
+.diagram img {
+  width: 100%;
+}
+
+/* DEVICES */
+@media (max-width: 991.98px) {
+  .diagram {
+    width: 100%;
+  }
+
+}

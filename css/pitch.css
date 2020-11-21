@@ -1,0 +1,46 @@
+.container-fluid {
+  height: 100vh;
+}
+
+.pitch-bg {
+  background-image: linear-gradient(to right, #000000cb 1%, transparent 99%),
+    linear-gradient(to top, #000 1%, transparent 99%),
+    url(../images/background/pitch.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.video {
+  width: 50%;
+  min-width: 310px;
+  margin: auto;
+}
+
+.embed-vid {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.embed-vid video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  outline: none !important;
+}
+
+
+/* DEVICES */
+@media (max-width: 991.98px) {
+  .video {
+    width: 60%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .video {
+    width: 60%;
+  }
+}
